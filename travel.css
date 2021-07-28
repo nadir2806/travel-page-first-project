@@ -4,14 +4,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
-img{
+.img{
     top: 0;
     right: 0;
     width: 100%;
     height: 100vh;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
 }
 header{
     padding: 30px 40px ;
@@ -63,5 +64,168 @@ h1 a:hover span{
     color: white;
     font-size: 4em;
 }
+.black{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(58, 57, 57,0.41);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+    .texts h3 , .texts p{
+        margin-bottom: 20px;
+        color: rgb(243, 240, 240);
+    }
+.texts .btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: rgb(199, 153, 160);
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    margin-top: 30px;
+}
+.texts .btn:hover {
+    letter-spacing: 4px;
+}
+ .social {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 50px;
+}
+.social li a{
+    color: white ;
+    padding: 0px 20px;
+    font-size: 1.5em;
+    transition: 0.7s;
+}
+.social li a:hover{
+    color: pink;
+    transform: translateY(-25px);
+}
+.title span{
+    color: pink;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+#services{
+    padding: 110px;
+}
+ .title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+#services p{
+    margin: 10px 0px;
+}
+#services  .content{
+    display: flex;
+}
+#services  .content .tex{
+    width: 50%;
+    margin-right: 30px;
+    padding: 20px;
+}
+#blog {
+    background-color:#34495E ;
+    padding: 50px 100px;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.block .bolgwrap{
+    width:30%;
+    color: white;
+    text-align: center;
+   padding: 50px 20px;
+   margin: 30px 0px;
+    background-color: #283747;
+    transition: 0.8s;
+    box-shadow: 10px 10px 12px rgba(71, 69, 69, 0.719);
+}
+.block .bolgwrap:hover{
+    background-color: pink;
+    color: black;
+ transform: translateY(-15px);
+
+}
+.block .bolgwrap img{
+  filter: invert(1);
+  margin-bottom: 30px ;
+}
+.block .bolgwrap img:hover{
+    filter: invert(0);
+}
+#blog .title.white{
+    color: white ;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+footer{
+    height: 100px;
+    background-color: #2b3b4d;
+    text-align: center;
+}
+footer p{
+color: pink;
+padding: 39px 0;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+footer p a:hover{
+    color: red;
+}
+.lolo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    margin-right: 0 30px;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 
